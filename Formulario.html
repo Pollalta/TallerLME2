@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Formulario.css">
+    <link rel="stylesheet" href="css/Icons/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+  <div class="cajaMadre">
+    <header>
+        <div class="container">
+          <nav>
+              
+            <ul>
+                <img src="css/img/grulla.png" alt="">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">El club</a></li>
+              <li><a href="#">Actividades</a></li>
+              <li><a href="#">Plantilla</a></li>
+              <li><a href="#">Inscripción en línea</a></li>
+              <li><a href="#">Vídeos</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+      </header>
+      <div class="Titulo"><h1>-Inscribite-</h1></div>   
+    <div class="Texto">
+      
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. 
+    <br>
+    <br>
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <aside class="formulario">
+      <label><h1>Datos personales</h1></label>
+      <form action="#" method="POST" name="form1">
+        <div class="CambioTexto">
+          <legend>Nombre</legend>
+            <input type="Text"name="Nombres" id=""placeholder="Escriba su Nombre" required="required" minlength="1"required pattern="[A-Za-z]+" title="Solo se acepta letras">
+            <legend>Apellidos</legend>
+            <input type="Text" name="Apellidos" placeholder="Escriba sus Apellidos" required="required" minlength="1" required pattern="[A-Za-z]+"title="Solo se acepta letras">
+        </div>
+          <div id="Cambio">
+            <legend>Fecha de nacimiento</legend>
+            <input type="date" name="Fecha de nacimiento" required="required">
+            <legend>Edad</legend>
+            <input type="Number" name="Edad" required="required" min="9">
+             <legend>Género</legend>
+            <input type="radio" name="Sexo" class="Sexo"checked="checked" ><label>Másculino</label>
+            <input type="radio" name="Sexo"class="Sexo"><label>Femenino</label>
+          </div>
+          <div class="CambioTexto">
+            <legend>Correo Electrónico</legend>
+            <input type="email" name="Correo" placeholder="Escriba su correo Electrónico" required="required" minlength="1"> 
+          </div>
+          <legend>Departamento</legend>
+          <select required="required">
+            <option>San Salvador</option>
+            <option>San Vicente</option>
+            <option>Cabañas</option>
+            <option>San Miguel</option>
+            <option>Morazán</option>
+            <option>La Paz</option>
+            <option>Santa Ana</option>
+            <option>Ahuachapán</option>
+            <option>Sonsonate</option>
+            <option>La Unión</option>
+            <option>Cuzcatlán</option>
+            <option>Chalatenango</option>
+            <option>La libertad</option>
+            <option>Usulután</option>
+          </select>
+          <legend>Domicilio</legend>
+          <textarea name="Domicilio" id="Textarea" cols="30" rows="5" required="required"></textarea>
+          <br>
+          <input id="Boton"type="submit" name="Registrarse" value="Registrarse">
+      </form>
+      </aside>
+    <footer class="footer">
+        <div id="contacto">
+            <p>Todos los derechos reservados | Diseñado por Fernando Lemus y Fernando German</p>
+            <a class="telefonoF"><span class="icon-phone"></span></a>
+                <a href="" target="_blank" class="facebookF"><span class="icon-facebook2"></span></a>
+                <a href="" target="_blank" class="twitterF"><span class="icon-twitter"></span> </a>
+                <a href="" target="_blank" class="youtubeF"><span class="icon-youtube"></span></a>
+        </div>
+    </footer>
+  </div>  
+</body>
+</html>
