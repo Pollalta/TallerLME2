@@ -1,0 +1,233 @@
+*{
+  margin:0;
+  padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.
+.container {
+	width: 90%;
+	margin: 0 auto;
+  height: 90%;
+}
+
+header {
+  background: #2788ff;
+
+}
+header img{
+margin-top: 0px;
+ width: 5%;
+ height: 5%;
+ align-items:center;
+ justify-content: center;
+ float:left;
+}
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li {
+  padding:0px; 
+  display: inline-block;
+  margin-left: 7%;
+  position: relative;
+  
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.cajaMadre{
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4 auto);
+  grid-template-areas: "header header header"
+                        "Titulo Titulo Titulo"
+                        "Texto formulario formulario"
+                        "footer footer footer";
+}
+.cajaMadre >div,
+.cajaMadre header,
+.cajaMadre .Texto,
+.cajaMadre .Titulo,
+.cajaMadre .formulario,
+.cajaMadre .footer{
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.cajaMadre header{
+ grid-area: header;
+}
+.cajaMadre .Titulo{
+  grid-area: Titulo;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cajaMadre .Texto{
+  grid-area: Texto;
+  text-align: justify;
+  margin-left: 10%;
+}
+.cajaMadre .formulario{
+  grid-area: formulario;
+}
+.cajaMadre .footer{
+  grid-area: footer;
+}
+
+form{
+  width: 90%;
+  height: 650px;
+  border:1px 1px solid black;
+  border-radius: 3px;
+  /*background:linear-gradient(#130f40,#30336b);*/
+   background: #2b2b2b;
+   color:white;
+}
+legend, input{
+  padding-left:1%;
+}
+legend{
+  margin-top: 1%;
+  padding-top: 2%;
+}
+input, select, textarea{
+  margin-left: 4%;
+
+}
+textarea{
+  width: 90%;
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  background-color: transparent;
+}
+textarea:focus:valid{
+  color: white;
+  border-left: transparent;
+  border-color:
+  border-right:transparent; 
+}
+.CambioTexto input{
+  border-left: transparent;
+  border-right: transparent;
+  border-top: transparent;
+  width: 90%;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+}
+.CambioTexto input:focus:valid{
+  color:white;
+  
+}
+.Sexo{
+  background-color: transparent;
+}
+#Cambio input{
+  background-color: transparent;
+  color: white;
+}
+.CambioTexto input:hover{
+  color:white;
+  border-bottom-color: #4834d4;
+  transition-delay: 0.5s;
+}
+select{
+  background-color: transparent;
+  color:white;
+}
+select:hover{
+  background-color: #4834d4;
+}
+select:focus:valid{
+  background-color:#2b2b2b;
+}
+#Boton{
+  margin-left: 82%;
+  margin-top: 2%;
+  padding-right: 1%;
+  text-align: center;
+  background-color: #4834d4;
+  color: white;
+}
+#Boton:hover{
+  background-color: #5758BB;
+}
+
+/*F O O T E R*/
+footer{
+    background-color: #2788ff;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway';
+    padding: 2em;
+}
+
+.telefonoF, .facebookF, .twitterF, .youtubeF{
+    color: white;
+    text-decoration: none;
+}
+
+.telefonoF:hover, .facebookF:hover, .twitterF:hover, .youtubeF:hover{
+    text-decoration: underline;
+}
+
+@media( max-width: 900px ){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
