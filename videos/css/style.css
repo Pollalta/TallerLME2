@@ -6,8 +6,9 @@ body {
 }
 
 .container {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
+  height: 90%;
 }
 
 header {
@@ -15,8 +16,12 @@ header {
 
 }
 header img{
- width: 10%;
-
+margin-top: 0px;
+ width: 5%;
+ height: 5%;
+ align-items:center;
+ justify-content: center;
+ float:left;
 }
 header::after {
   content: '';
@@ -28,22 +33,23 @@ header::after {
   float: left;
   padding: 10px 0;
 }
-nav{
-    margin-left: 20%;
-}
 nav ul {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   list-style: none;
+  align-items: center;
+  justify-content: center;
 }
 
 nav li {
+  padding:0px; 
   display: inline-block;
-  margin-left: 70px;
-
-  padding-top: 23px;
-
+  margin-left: 7%;
   position: relative;
+  
+
 }
 
 nav a {
@@ -52,6 +58,7 @@ nav a {
   text-transform: uppercase;
   font-size: 14px;
 }
+
 
 nav a:hover {
   color: #000;
