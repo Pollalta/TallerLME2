@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-	
+  
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
@@ -84,6 +84,7 @@ nav a:hover::before {
 }
 h1{
   text-align: center;
+  
 }
 #marta,#medalla{
   display: grid;
@@ -154,16 +155,31 @@ td{
   background-color: #dadcff;;
 }
 ol{
-  margin-left: 30px;
   position: relative;
   padding: 10px;
-
+  margin-left: auto;
+  background-color: #d8e3e7;
+  color:black;
+  font-size: 1.25em;
+  font-weight: bolder;
 }
 #medalla .hijo{
   list-style:upper-latin;
-  padding: 10px 20px;
-  
+  padding: 10px 10px;
+  background-color: #51c4d3;
+  font-weight: normal;
+  font-size: 1em;
 }
+#medalla .hijo:hover{
+  background-color: white;
+  transform: scale(1.1);
+  transition: ease-in-out 1s;
+}
+#medalla .hijo:before{
+
+  transition: ease-in-out 1s;
+}
+
 /*F O O T E R*/
 footer{
     background-color: #2788ff;
