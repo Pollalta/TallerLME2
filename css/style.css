@@ -153,19 +153,16 @@ td{
   border: 2px solid black;
   background-color: #dadcff;;
 }
-.medal li,ol{
-  margin-left:25px ;
-  text-align: center;
-  font-weight: bold;
+ol{
+  margin-left: 30px;
+  position: relative;
+  padding: 10px;
 
 }
-.medal h2{
-  text-align: center;
-}
-.medal{
-  -webkit-box-shadow: -2px 17px 31px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -2px 17px 31px 0px rgba(0,0,0,0.75);
-  box-shadow: -2px 17px 31px 0px rgba(0,0,0,0.75);
+#medalla .hijo{
+  list-style:upper-latin;
+  padding: 10px 20px;
+  
 }
 /*F O O T E R*/
 footer{
