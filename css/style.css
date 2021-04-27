@@ -154,25 +154,45 @@ td{
   border: 2px solid black;
   background-color: #dadcff;;
 }
+#medalla{
+  margin: 0;
+  position: relative;
+  background-color: black;
+}
+#medalla::before{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  content: '';
+  background-image: url('https://www.wikihow.com/images/thumb/4/41/Teach-Yourself-the-Basics-of-Karate-Step-12-Version-2.jpg/aid8203-v4-1200px-Teach-Yourself-the-Basics-of-Karate-Step-12-Version-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 40%;
+  filter: blur(3px);
+}
 ol{
   position: relative;
   padding: 10px;
   margin-left: auto;
-  background-color: #d8e3e7;
-  color:black;
+  color:rgb(255, 255, 255);
   font-size: 1.25em;
   font-weight: bolder;
 }
+
 #medalla .hijo{
   list-style:upper-latin;
   padding: 10px 10px;
   background-color: #51c4d3;
   font-weight: normal;
   font-size: 1em;
+  border-radius: 20px;
 }
 #medalla .hijo:hover{
   background-color: white;
   transform: scale(1.1);
+  color: #000;
   transition: ease-in-out 1s;
 }
 #medalla .hijo:before{
